@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ServiceAccount
 metadata:
-  name: pkg-gitops-pkgi-sa
+  name: pkg-gitops-app-sa
   namespace: pkg-gitops
   annotations:
     kapp.k14s.io/change-group: "packageinstall-setup"
@@ -25,7 +25,7 @@ metadata:
     kapp.k14s.io/change-group: "packageinstall-setup"
 subjects:
 - kind: ServiceAccount
-  name: pkg-gitops-pkgi-sa
+  name: pkg-gitops-app-sa
   namespace: pkg-gitops
 roleRef:
   apiGroup: rbac.authorization.k8s.io
